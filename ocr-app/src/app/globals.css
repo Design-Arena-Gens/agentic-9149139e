@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top left, #172554, #020617 55%);
+  color: #f8fafc;
+}
+
+::selection {
+  background: rgba(96, 165, 250, 0.35);
+  color: inherit;
+}
